@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tool="http://schemas.android.com/tools"
+              android:id="@+id/ll_product_item"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical"
+              android:padding="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="178dp">
+
+        <ImageView
+            android:id="@+id/iv_product_img"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:background="@drawable/bg_border"
+            android:src="@drawable/load"/>
+
+        <TextView
+            android:id="@+id/tv_customized_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:alpha="0.7"
+            android:background="@drawable/shape_cyan"
+            android:paddingLeft="5dp"
+            android:paddingTop="1dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="1dp"
+            android:textColor="@color/white"
+            android:textSize="9sp"
+            android:visibility="gone"
+            tool:text="100人定制"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_product_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="6dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxEms="7"
+            android:singleLine="true"
+            android:text="会议邀请函"
+            android:textColor="@color/color_434a5c"
+            android:textSize="12sp"/>
+
+
+        <TextView
+            android:id="@+id/tv_product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_ff999999"
+            android:textSize="@dimen/sp_12"
+            tool:text="参考价："/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_user_head"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/user_moren"/>
+
+        <TextView
+            android:id="@+id/tv_customer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="@color/color_eb6ea5"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_product_customer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="@color/color_eb6ea5"
+            android:textSize="12sp"/>
+
+
+        <TextView
+            android:id="@+id/tv_product_designer_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="@color/color_ff333333"
+            android:textSize="10sp"/>
+
+
+        <TextView
+            android:id="@+id/tv_product_describe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:lines="2"
+            android:textColor="@color/color_ff999999"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+
+</LinearLayout>
