@@ -5,6 +5,7 @@ import com.hzq520.kotlindemo.R
 import com.hzq520.kotlindemo.base.BaseFragment
 import com.hzq520.kotlindemo.base.BaseFragmentAdapter
 import com.hzq520.kotlindemo.mvp.view.CaseFrgment
+import com.orhanobut.logger.Logger
 import kotlinx.android.synthetic.main.fragment_home.*
 
 /**
@@ -47,6 +48,8 @@ class HomeFragment : BaseFragment() {
      * 懒加载
      */
     override fun lazyLoad() {
+
+        Logger.d("---->:" + "新建分支")
     }
 
 
